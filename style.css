@@ -15,18 +15,22 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 20vh auto;
   max-width: 650px;
+  min-height: 55vh; 
 }
 .product-card {
   display: flex;
   background: white;
   max-width: 100%;
   border-radius: 10px;
+  min-height: 53vh;
+  max-height: 450px;
 }
 
 .product-card__text {
-  padding: 25px;
+  padding: 15px;
   flex: 1;
   max-width: 325px;
+  margin: 0;
 }
 
 .add-to-cart-btn {
@@ -39,7 +43,7 @@ body {
   background: hsl(158, 36%, 37%);
   border-radius: 10px;
   font-size: 1.5rem;
-  margin: 2em 0 1em 0;
+  margin: 1em 1em 1em 0em;
 }
 
 .add-to-cart-btn img {
@@ -52,13 +56,17 @@ body {
   font-weight: 500;
   letter-spacing: 0.4em;
   font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  padding: 0;
 }
 
 .product-card__text h2 {
   font-size: 3.3rem;
   font-family: "fraunces", serif;
   color: hsl(212, 21%, 14%);
-  line-height: 1; 
+  line-height: 1;
+  padding-right: 30px;
 }
 
 .product-card__text h4 {
@@ -66,6 +74,7 @@ body {
   line-height: 1.4;
   color: hsl(228, 12%, 48%);
   font-weight: 500;
+  padding-right: 30px;
 }
 
 .product-card__text .discounted-price {
@@ -76,6 +85,8 @@ body {
 .price {
   display: flex;
   align-items: center;
+
+  padding: 0;
 }
 .previous-price {
   display: inline-block;
@@ -85,9 +96,8 @@ body {
   font-size: 1.5rem;
 }
 .product-images {
-  max-width: 325px; 
+  max-width: 325px;
  
-  
 }
 .mobile-img {
   display: none;
@@ -95,8 +105,8 @@ body {
 
 .desktop-img {
   object-fit: cover;
-  max-width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -111,7 +121,7 @@ body {
   .product-card {
     display: flex;
     flex-direction: column;
-    max-width: 475px;
+    max-width: 100%;
     margin: 10px;
     max-height: 95vh;
   }
@@ -120,7 +130,7 @@ body {
     font-size: 3.3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    max-width: 400px;
+    max-width: 600px;
   }
 
   .product-card__text h1 {
@@ -130,14 +140,20 @@ body {
   .product-card__text h4 {
     line-height: 1.4;
     margin-top: 0;
-    font-size: 1.5rem;
-    max-width: 400px;
+    font-size: 1.6rem;
+    max-width: 600px;
+    margin-right: 0;
+    padding-right: 0;
   }
   .mobile-img {
-    display: flex;
+    display: block;
     max-width: 100%;
-    flex: 1;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
+  }
+
+  .product-images {
+    max-width: 720px;
   }
 
   .add-to-cart-btn {
