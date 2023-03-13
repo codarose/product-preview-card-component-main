@@ -55,14 +55,15 @@ body {
 }
 
 .product-card__text h2 {
-  font-size: 3.8rem;
+  font-size: 3.3rem;
   font-family: "fraunces", serif;
   color: hsl(212, 21%, 14%);
+  line-height: 1; 
 }
 
 .product-card__text h4 {
   font-size: 1.6rem;
-  line-height: 1.7;
+  line-height: 1.4;
   color: hsl(228, 12%, 48%);
   font-weight: 500;
 }
