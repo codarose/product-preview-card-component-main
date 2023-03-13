@@ -25,6 +25,8 @@ body {
 
 .product-card__text {
   padding: 25px;
+  flex: 1;
+  max-width: 325px;
 }
 
 .add-to-cart-btn {
@@ -81,13 +83,19 @@ body {
   padding: 20px;
   font-size: 1.5rem;
 }
-
+.product-images {
+  max-width: 325px; 
+ 
+  
+}
 .mobile-img {
   display: none;
 }
 
 .desktop-img {
-  width: 50%;
+  object-fit: cover;
+  max-width: 100%; 
+  height: 100%; 
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -119,17 +127,19 @@ body {
   }
 
   .product-card__text h4 {
-    line-height: 1.4; 
-    margin-top: 0; 
-    font-size: 1.5rem; 
+    line-height: 1.4;
+    margin-top: 0;
+    font-size: 1.5rem;
     max-width: 400px;
   }
   .mobile-img {
-    display: block;
-    border-radius: 10px 10px 0px 0px; 
+    display: flex;
+    max-width: 100%;
+    flex: 1;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .add-to-cart-btn {
-    margin-top: 1rem; 
+    margin-top: 1rem;
   }
 }
